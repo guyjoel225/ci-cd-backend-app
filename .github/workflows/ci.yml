@@ -1,6 +1,6 @@
-name: nodejs CI CD
+name: DEUXIME TEST CI/CD
 
-run-name: ${{vars.RUN_NAME}} - ${{vars.WFLOW_NAME}}
+run-name: node js backend ci/cd
 
 on:
   push:
@@ -10,11 +10,10 @@ on:
 
 jobs:
   
-  test:
-   
-    name: premier job CI/CD
+  bienvenue:
+    name: Afficher un message
     runs-on: ubuntu-latest
-
-    steps:
-      - name: afficher un message de bien venue
-        run: echo "Welcome jojo"
+  
+  steps:
+    - name: test de message
+      run: echo "Hello Joel, how are you doing?"
