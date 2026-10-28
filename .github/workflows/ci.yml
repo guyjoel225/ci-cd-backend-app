@@ -14,6 +14,6 @@ jobs:
     name: Afficher un message
     runs-on: ubuntu-latest
   
-  steps:
-    - name: test de message
-      run: echo "Hello Joel, how are you doing?"
+    steps:
+      - name: test de message
+        run: echo "Hello Joel, how are you doing?"
