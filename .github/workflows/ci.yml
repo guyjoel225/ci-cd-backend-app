@@ -1,6 +1,6 @@
-name: ${{vars.WFLOW_NAME}}
+name: nodejs CI CD
 
-run-name: ${{vars.RUN_NAME}}
+run-name: ${{vars.RUN_NAME}} - ${{vars.WFLOW_NAME}}
 
 on:
   push:
