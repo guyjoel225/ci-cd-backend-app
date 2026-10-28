@@ -1,6 +1,6 @@
-name: ${{env.WFLOW_name}}
+name: ${{env.WFLOW_NAME}}
 
-run-name: ${{RUN_NAME}}
+run-name: ${{env.RUN_NAME}}
 
 on:
   push:
