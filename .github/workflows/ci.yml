@@ -17,3 +17,11 @@ jobs:
     steps:
       - name: test de message
         run: echo "Hello Joel, how are you doing?"
+
+    steps:
+      - name: installer les dependences
+        run: npm ci 
+    steps:
+      -  name: execution de test
+         run: npm run test
+    
