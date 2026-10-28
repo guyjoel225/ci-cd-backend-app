@@ -1,6 +1,6 @@
-name: Node js ci/ci
+name: ${{env.WFLOW_name}}
 
-run-name: CI/CD du Backenck
+run-name: ${{RUN_NAME}}
 
 on:
   push:
