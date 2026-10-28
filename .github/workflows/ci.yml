@@ -1,0 +1,20 @@
+name: Node js ci/ci
+
+run-name: CI/CD du Backenck
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  
+  test:
+   
+    name: premier job CI/CD
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: afficher un message de bien venue
+        run: echo "Welcome jojo"
