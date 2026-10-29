@@ -1,6 +1,6 @@
-name: DEUXIME TEST
+name: nodejs test app
 
-run-name: node js backend ci/cd
+run-name: test app
 
 on:
   push:
@@ -9,19 +9,31 @@ on:
 
 
 jobs:
-  
-  bienvenue:
-    name: Afficher un message
+
+  test:
+    
+    name: configurer et tester une app node js
+
     runs-on: ubuntu-latest
-  
-    steps:
-      - name: test de message
-        run: echo "Hello Joel, how are you doing?"
 
     steps:
-      - name: installer les dependences
-        run: npm ci 
-    steps:
-      -  name: execution de test
-         run: npm run test
-    
+      
+      - name: afficher un message
+        run: echo "Bonjour, un test de focntionnement"
+
+      - name: réccuperation du depot
+        uses: actions/checkout@v4
+
+      - name: configuration de l'environement node js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: installer les dépendances
+        run: npm ci
+
+      - name: tester les types
+        run: npm run typecheck
+
+      - name: tester le bon fonctionnement du code 
+        run: npm run test
