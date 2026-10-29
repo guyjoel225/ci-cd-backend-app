@@ -18,9 +18,9 @@ export class Operation{
   }
 
 
-  produit(){
+  produit(nbre1:number, nbre2:number): number{
 
-
+   return nbre1 * nbre2;
   }
 
 
