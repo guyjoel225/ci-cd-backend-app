@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        // "rootDir": "./src",
+        // "outDir": "./dist",
+
+        "target": "es2024",
+        "lib": ["es2024"],
+        "module": "nodenext",
+        "types": ["node"],
+
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "verbatimModuleSyntax": true,
+        "skipLibCheck": true,
+        "sourceMap": true
+    },
+    "include": ["backend/src","backend/tests"]
+}
