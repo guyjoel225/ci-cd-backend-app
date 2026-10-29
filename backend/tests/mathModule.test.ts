@@ -8,7 +8,7 @@ describe('Foonction Mathematique de calcule',()=>{
   
    it.each([
     {nbre1: 20, nbre2: 10, result: 30},
-    {nbre1: 30, nbre2: 30, result: 15},
+    {nbre1: 30, nbre2: 30, result: 60},
     {nbre1: 18, nbre2: 25, result: 43},
    ] satisfies {nbre1:number, nbre2: number, result: number} [])("somme: $nbre1 + $nbre2 = $result", ({nbre1, nbre2, result})=>{
 
